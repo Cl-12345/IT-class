@@ -1,4 +1,16 @@
-import sqlite3, get_dict
+import sqlite3, get_dict, random
+
+class my_dict:
+    def __init__(self, id, mean, rate, times, wr):
+        self.id = id
+        self.meaning = ''.join(i + '\n' for i in mean.split('$'))
+        self.wt = times if times else 0
+        self.wr = wr if wr else 0
+        self.cor = rate if rate else 0
+        self.is_change = 0
+    def __str__(self):
+        return f'{self.id} {self.meaning} {self.cor} T{self.wt} F{self.wr}'
+
 
 def create():
     c.execute(
@@ -9,7 +21,8 @@ def create():
         word TEXT NOT NULL,
         meanings TEXT NOT NULL,
         correct_rate REAL,
-        times INT
+        times INT,
+        wrong_times INT
         );
         '''
     )
@@ -33,11 +46,56 @@ def add():
     for i in (dic.items()):
         add_word_if_not_existed(i[0], i[1])
 
+def test():
+    n = 10
+    for i in range(10):
+        wei = [(i.cor + 1 if i.cor else 1) for i in dicts.values()]
+        word = [str(i) for i in dicts.keys()]
+        ans = random.choices(word, wei)[0]
+        # print(k)
+        # print(dicts)
+        mea = dicts[ans]
+        # print(mea)
+        print(f'这个单词的中文是：\n{mea.meaning}')
+        inp = input('请输入这个单词的英文：').strip()
+        mea.is_change = True
+        if inp != ans:
+            mea.wr += 1
+            mea.rate = mea.wt / (mea.wt + mea.wr)
+            print(f'错误，错误次数{mea.wr}，正确率{mea.rate}，正确答案是{ans}\n\n\n')
+        else:
+            print('正确\n\n\n')
+            mea.wt += 1
+            mea.rate = mea.wt / (mea.wt + mea.wr)
 def ui():
     print('欢迎使用单词错题本！')
-    print('请输入你的操作：')
-    
+    while True:
+        print('请输入你的操作(数字)：')
+        op = int(input(('1.测试\n2.错题本\n3.退出\n')))
+        if op == 3:
+            for i in dicts.values():
+                if i.is_change:
+                    c.execute('UPDATE DICTS SET correct_rate = (?), times = (?), wrong_times = (?) WHERE ID = (?)', (i.cor, i.wt, i.wr, i.id, ))
+            return
+        elif op == 1:
+            test()
+        elif op == 2:
+            f = True
+            for i in dicts.items():
+                if i[1].wr:
+                    print(f'{i[0]}: 错误次数{i[1].wr}，正确率{i[1].cor}\n意思：{i[1].meaning}')
+                    f = False
+
+            if (f):
+                print('你还没有错题，请开始测试')
+
+def init():
+    c.execute('SELECT * FROM DICTS')
+    words = c.fetchall()
+    for i in words:
+        dicts[i[1]] = my_dict(i[0], i[2], i[3], i[4], i[5])
 def main():
+    init()
     ui()
 
 
@@ -45,6 +103,8 @@ def main():
 dic = sqlite3.connect('dict.db')
 c = dic.cursor()
 create()
+add()
+dicts = dict()
 
 main()
 dic.commit()
