@@ -14,8 +14,8 @@ with pd.ExcelWriter('rank.xlsx', engine='openpyxl', ) as xls:
             grade = []
             for j in mess:
                 subject.append(j[3].text.strip())
-                grade.append(j[4].text.strip())
-                stu.append(j[5].text.strip())
+                grade.append(float(j[4].text.strip()))
+                stu.append(float(j[5].text.strip()))
             # xls.close()
             schools = []
 
