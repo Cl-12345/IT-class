@@ -62,7 +62,7 @@
         <mxCell id="oIy4ojN_bqmMRTDIwIit-28" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="结束" vertex="1">
           <mxGeometry height="80" width="120" x="354" y="690" as="geometry" />
         </mxCell>
-        <mxCell id="oIy4ojN_bqmMRTDIwIit-31" parent="1" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" value="排名的文档" vertex="1">
+        <mxCell id="oIy4ojN_bqmMRTDIwIit-31" parent="1" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" value="10年内大学排名的文档" vertex="1">
           <mxGeometry height="80" width="120" x="590" y="575" as="geometry" />
         </mxCell>
       </root>
