@@ -5,13 +5,13 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="oIy4ojN_bqmMRTDIwIit-1" connectable="0" parent="1" style="group" value="" vertex="1">
-          <mxGeometry height="60" width="120" x="354" y="130" as="geometry" />
-        </mxCell>
-        <mxCell id="M7ARgdcivUom9ZIBdH3B-4" parent="oIy4ojN_bqmMRTDIwIit-1" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
-          <mxGeometry height="60" width="120" as="geometry" />
+          <mxGeometry height="75" width="120" x="354" y="125" as="geometry" />
         </mxCell>
         <mxCell id="M7ARgdcivUom9ZIBdH3B-5" parent="oIy4ojN_bqmMRTDIwIit-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="开始分析" vertex="1">
           <mxGeometry height="30" width="60" x="30" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="oIy4ojN_bqmMRTDIwIit-17" parent="oIy4ojN_bqmMRTDIwIit-1" style="ellipse;whiteSpace=wrap;html=1;" value="程序开始" vertex="1">
+          <mxGeometry height="80" width="120" y="-5" as="geometry" />
         </mxCell>
         <mxCell id="oIy4ojN_bqmMRTDIwIit-8" edge="1" parent="1" source="oIy4ojN_bqmMRTDIwIit-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="oIy4ojN_bqmMRTDIwIit-7" value="">
           <mxGeometry relative="1" as="geometry" />
@@ -19,29 +19,45 @@
         <mxCell id="oIy4ojN_bqmMRTDIwIit-2" parent="1" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" value="调用 selenium 库得到的大学排名文件" vertex="1">
           <mxGeometry height="80" width="120" x="140" y="120" as="geometry" />
         </mxCell>
-        <mxCell id="oIy4ojN_bqmMRTDIwIit-12" edge="1" parent="1" source="oIy4ojN_bqmMRTDIwIit-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="oIy4ojN_bqmMRTDIwIit-11" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="oIy4ojN_bqmMRTDIwIit-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="读取文件内容" vertex="1">
-          <mxGeometry height="80" width="120" x="354" y="250" as="geometry" />
-        </mxCell>
-        <mxCell id="oIy4ojN_bqmMRTDIwIit-6" edge="1" parent="1" source="M7ARgdcivUom9ZIBdH3B-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="oIy4ojN_bqmMRTDIwIit-3" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="oIy4ojN_bqmMRTDIwIit-10" edge="1" parent="1" source="oIy4ojN_bqmMRTDIwIit-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="oIy4ojN_bqmMRTDIwIit-3" value="">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="oIy4ojN_bqmMRTDIwIit-10" edge="1" parent="1" source="oIy4ojN_bqmMRTDIwIit-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="oIy4ojN_bqmMRTDIwIit-16" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="354" y="290" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="oIy4ojN_bqmMRTDIwIit-7" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="页面源代码" vertex="1">
           <mxGeometry height="60" width="120" x="140" y="260" as="geometry" />
         </mxCell>
-        <mxCell id="oIy4ojN_bqmMRTDIwIit-14" edge="1" parent="1" source="oIy4ojN_bqmMRTDIwIit-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="oIy4ojN_bqmMRTDIwIit-13" value="">
+        <mxCell id="oIy4ojN_bqmMRTDIwIit-20" edge="1" parent="1" source="oIy4ojN_bqmMRTDIwIit-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="oIy4ojN_bqmMRTDIwIit-19" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="oIy4ojN_bqmMRTDIwIit-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="使用 bs4 等库分析源文本" vertex="1">
-          <mxGeometry height="80" width="120" x="354" y="380" as="geometry" />
+        <mxCell id="oIy4ojN_bqmMRTDIwIit-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="读取文件内容" vertex="1">
+          <mxGeometry height="60" width="120" x="354" y="260" as="geometry" />
         </mxCell>
-        <mxCell id="oIy4ojN_bqmMRTDIwIit-13" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="遍历每一年的数据" vertex="1">
-          <mxGeometry height="80" width="120" x="354" y="490" as="geometry" />
+        <mxCell id="oIy4ojN_bqmMRTDIwIit-18" edge="1" parent="1" source="oIy4ojN_bqmMRTDIwIit-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="oIy4ojN_bqmMRTDIwIit-16" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oIy4ojN_bqmMRTDIwIit-22" edge="1" parent="1" source="oIy4ojN_bqmMRTDIwIit-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="oIy4ojN_bqmMRTDIwIit-21" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oIy4ojN_bqmMRTDIwIit-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="使用 bs4 等库分析源文本" vertex="1">
+          <mxGeometry height="60" width="120" x="354" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="oIy4ojN_bqmMRTDIwIit-25" edge="1" parent="1" source="oIy4ojN_bqmMRTDIwIit-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oIy4ojN_bqmMRTDIwIit-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="遍历每一年的数据" vertex="1">
+          <mxGeometry height="60" width="120" x="354" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="oIy4ojN_bqmMRTDIwIit-30" edge="1" parent="1" source="oIy4ojN_bqmMRTDIwIit-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="oIy4ojN_bqmMRTDIwIit-28" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oIy4ojN_bqmMRTDIwIit-26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="存储数据" vertex="1">
+          <mxGeometry height="60" width="120" x="354" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="oIy4ojN_bqmMRTDIwIit-28" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="结束" vertex="1">
+          <mxGeometry height="80" width="120" x="354" y="690" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
