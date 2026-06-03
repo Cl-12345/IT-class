@@ -53,11 +53,17 @@
         <mxCell id="oIy4ojN_bqmMRTDIwIit-30" edge="1" parent="1" source="oIy4ojN_bqmMRTDIwIit-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="oIy4ojN_bqmMRTDIwIit-28" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="oIy4ojN_bqmMRTDIwIit-32" edge="1" parent="1" source="oIy4ojN_bqmMRTDIwIit-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="oIy4ojN_bqmMRTDIwIit-31" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="oIy4ojN_bqmMRTDIwIit-26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="存储数据" vertex="1">
           <mxGeometry height="60" width="120" x="354" y="585" as="geometry" />
         </mxCell>
         <mxCell id="oIy4ojN_bqmMRTDIwIit-28" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="结束" vertex="1">
           <mxGeometry height="80" width="120" x="354" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="oIy4ojN_bqmMRTDIwIit-31" parent="1" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" value="排名的文档" vertex="1">
+          <mxGeometry height="80" width="120" x="590" y="575" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
