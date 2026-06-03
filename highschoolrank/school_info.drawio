@@ -17,7 +17,10 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="oIy4ojN_bqmMRTDIwIit-2" parent="1" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" value="调用 selenium 库得到的大学排名文件" vertex="1">
-          <mxGeometry height="80" width="120" x="160" y="140" as="geometry" />
+          <mxGeometry height="80" width="120" x="140" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="oIy4ojN_bqmMRTDIwIit-12" edge="1" parent="1" source="oIy4ojN_bqmMRTDIwIit-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="oIy4ojN_bqmMRTDIwIit-11" value="">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="oIy4ojN_bqmMRTDIwIit-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="读取文件内容" vertex="1">
           <mxGeometry height="80" width="120" x="354" y="250" as="geometry" />
@@ -29,10 +32,10 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="oIy4ojN_bqmMRTDIwIit-7" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="页面源代码" vertex="1">
-          <mxGeometry height="60" width="120" x="140" y="250" as="geometry" />
+          <mxGeometry height="60" width="120" x="140" y="260" as="geometry" />
         </mxCell>
         <mxCell id="oIy4ojN_bqmMRTDIwIit-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="使用 bs4 等库分析源文件" vertex="1">
-          <mxGeometry height="80" width="120" x="350" y="360" as="geometry" />
+          <mxGeometry height="80" width="120" x="354" y="380" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
