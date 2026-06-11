@@ -65,4 +65,5 @@ for x, y in zip(year, bei):
     plt.text(x, y, str(y), ha='center', va='bottom', fontsize=9)
 
 plt.tight_layout()
+plt.savefig('form.png')
 plt.show()
